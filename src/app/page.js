@@ -24,7 +24,7 @@ export default async function Home() {
                 Object.values(data).map((item) => (
                     <div className={styles.post} key={item.id}>
                        <div>{item.text}</div><br />
-                        <Link href={"/post/" + item.id}>show post</Link>
+                        <Link href={"/post/" + (item.id - 1)}>show post</Link>
                     </div>
                 ))
             } 
