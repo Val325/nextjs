@@ -19,6 +19,9 @@ export default async function Home() {
   const data = await getData()
   return (
     <main>
+        <header className={styles.blog}>
+          <h1>blog</h1>
+        </header>
         <div className={styles.posts}>
             {
                 Object.values(data).map((item) => (

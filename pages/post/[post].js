@@ -12,14 +12,18 @@ export default function Post({ data }) {
   console.log("Update typeof: ", typeof update)
 
   return (
-   
+    <main>
+    <header className={styles.blog}>
+      <h1>blog</h1>
+    </header> 
     <div className={styles.post}>
-      <h1>First Post</h1>
-      {update && <p>{update.text}</p>}
-      <h2>
+      <h1>id post: {update.id}</h1>
+     {update && <p>{update.text}</p>}  
+      <p>
         <Link href="/">Back to home</Link>
-      </h2>
+      </p>
     </div>
+    </main>
   );
 }
 
